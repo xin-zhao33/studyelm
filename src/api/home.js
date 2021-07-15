@@ -7,3 +7,10 @@ export const hotCity = (params) =>{
     params
   })
 }
+
+export const getCityName = (params) =>{
+  return  _fetch({
+    url: '/v1/cities/' + params,
+    method: 'get',
+  })
+}
